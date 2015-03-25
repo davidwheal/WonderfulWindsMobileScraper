@@ -1,0 +1,12 @@
+﻿<div class="container-fluid">
+    <ul class="mymenu">
+        <li ng-repeat="Item in menu.Items">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-lg-12">
+                    <a ui-sref="menudetails({index:$index})">{{Item}}</a>
+                </div>
+            </div>
+
+        </li>
+    </ul>
+</div>

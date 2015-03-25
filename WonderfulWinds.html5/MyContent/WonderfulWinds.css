@@ -1,0 +1,73 @@
+﻿/*
+ * Base structure
+ */
+.navbar {
+    background-color: #57adad;
+}
+/*/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+    padding-top: 0px;
+}
+
+a {
+    color: #57adad;
+}
+
+/* Fit ww logo in */
+.navbar-brand {
+    padding: 6px 1px;
+}
+
+/* Make the border invisible */
+.navbar {
+    border-color: #57adad;
+}
+
+.mymenu li {
+    list-style-type: none;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color: #1f7f7f;
+}
+
+
+div.padded {
+    padding-top: 2px;
+    padding-right: 0px;
+    padding-bottom: 8px;
+    padding-left: 0px;
+}
+
+input[type="text"] {
+    display: block;
+    margin: 0;
+    width: 10%;
+    font-family: sans-serif;
+    font-size: 18px;
+    appearance: none;
+    box-shadow: none;
+    border-radius: none;
+}
+
+.Checkout-Border {
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+}
+
+.MenuItems-Border {
+    border-bottom-style: groove;
+    border-bottom-width: 1px;
+    padding:5px;
+
+}
+
+.Checkout_Button {
+    font-family: sans-serif;
+    font-size: 18px;
+}
+
+.Pdf-Icon
+{
+    padding-bottom:10px;
+}

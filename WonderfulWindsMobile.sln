@@ -1,0 +1,65 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30501.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WonderfulWinds.Scraper.Console", "WonderfulWinds.Scraper.Console\WonderfulWinds.Scraper.Console.csproj", "{05C28AA8-090A-45DF-8709-1E6A84FCDFDE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WonderfulWinds.Scraper.Model", "WonderfulWinds.Scraper.Model\WonderfulWinds.Scraper.Model.csproj", "{3BB3FC5F-ABC5-47A0-B8C7-E854D0CD5202}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WonderfulWinds.Scraper.Model.Tests", "WonderfulWinds.Scraper.Model.Tests\WonderfulWinds.Scraper.Model.Tests.csproj", "{6D90187C-7884-42A0-A2D8-AACFD7A86EA4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WonderfulWinds.Scraper.Repository", "WonderfulWinds.Scraper.Repository\WonderfulWinds.Scraper.Repository.csproj", "{D5B759EA-D9CF-461B-BD1B-5DDEAA105FAF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WonderfulWinds.Scraper.Service", "WonderfulWinds.Scraper.Service\WonderfulWinds.Scraper.Service.csproj", "{396B11A0-1FE4-43B2-8D25-7136135687ED}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PublishScripts", "PublishScripts", "{9FAC99F8-8CC6-4C33-9B77-49C62B1DABD0}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\AzureWebsitePublishModule.psm1 = PublishScripts\AzureWebsitePublishModule.psm1
+		PublishScripts\Publish-WebApplicationWebsite.ps1 = PublishScripts\Publish-WebApplicationWebsite.ps1
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Configurations", "Configurations", "{BBDDAC3A-6B67-44D4-90B8-67E71CA6DA2A}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Configurations\WonderfulWindsCMSMobile-WAWS-dev.json = PublishScripts\Configurations\WonderfulWindsCMSMobile-WAWS-dev.json
+		PublishScripts\Configurations\WonderfulWindsMobile-WAWS-dev.json = PublishScripts\Configurations\WonderfulWindsMobile-WAWS-dev.json
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Web", "Web", "{1838B9C8-3863-41F7-B932-40B24AEA22DD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{05C28AA8-090A-45DF-8709-1E6A84FCDFDE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05C28AA8-090A-45DF-8709-1E6A84FCDFDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05C28AA8-090A-45DF-8709-1E6A84FCDFDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05C28AA8-090A-45DF-8709-1E6A84FCDFDE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{05C28AA8-090A-45DF-8709-1E6A84FCDFDE}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{3BB3FC5F-ABC5-47A0-B8C7-E854D0CD5202}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3BB3FC5F-ABC5-47A0-B8C7-E854D0CD5202}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3BB3FC5F-ABC5-47A0-B8C7-E854D0CD5202}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3BB3FC5F-ABC5-47A0-B8C7-E854D0CD5202}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3BB3FC5F-ABC5-47A0-B8C7-E854D0CD5202}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{6D90187C-7884-42A0-A2D8-AACFD7A86EA4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D90187C-7884-42A0-A2D8-AACFD7A86EA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D90187C-7884-42A0-A2D8-AACFD7A86EA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D90187C-7884-42A0-A2D8-AACFD7A86EA4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D5B759EA-D9CF-461B-BD1B-5DDEAA105FAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5B759EA-D9CF-461B-BD1B-5DDEAA105FAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5B759EA-D9CF-461B-BD1B-5DDEAA105FAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5B759EA-D9CF-461B-BD1B-5DDEAA105FAF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{396B11A0-1FE4-43B2-8D25-7136135687ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{396B11A0-1FE4-43B2-8D25-7136135687ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{396B11A0-1FE4-43B2-8D25-7136135687ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{396B11A0-1FE4-43B2-8D25-7136135687ED}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{BBDDAC3A-6B67-44D4-90B8-67E71CA6DA2A} = {9FAC99F8-8CC6-4C33-9B77-49C62B1DABD0}
+	EndGlobalSection
+EndGlobal

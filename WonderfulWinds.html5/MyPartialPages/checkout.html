@@ -1,0 +1,23 @@
+﻿
+<div class="panel panel-default">
+    
+    <div class="panel-heading">Check out and payment</div>
+    <!-- Table -->
+    <table  border="1" class="table">
+        <tr ng-repeat="Item in basket">
+            <td align="right" style="width:200px">{{Item.product.Title}}</td>
+            <td align="right">{{Item.product.Code}}</td>
+            <td align="right">{{Item.product.Price}}</td>
+            <td align="right">{{Item.Quantity}}</td>
+            <td align="right">£{{Item.Price}}</td>
+        </tr>
+        
+  
+        <tr>
+            <td colspan="1" align="right">Total</td>
+            <td colspan="4" align="right">£{{baskettotal}}</td>
+        </tr>
+
+    </table>
+
+</div>

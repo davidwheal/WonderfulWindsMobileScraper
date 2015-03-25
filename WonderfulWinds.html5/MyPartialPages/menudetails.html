@@ -1,0 +1,88 @@
+﻿<style scoped>
+    body, body p, #pageSynopsis p, div#pageSynopsis, div#synopsis p, div#synopsis {
+        font-family: arial, sans-serif;
+        font-size: 12px;
+        line-height: 15px;
+        word-spacing: 0pt;
+        letter-spacing: 0pt;
+    }
+
+    h1 {
+        font-family: arial, sans-serif;
+    }
+
+    h2 {
+        font-family: arial, sans-serif;
+    }
+
+    a:link, a:active, a:visited, #footer a:link, #footer a:active, #footer a:visited {
+        font-family: arial, sans-serif;
+        text-decoration: underline;
+    }
+</style>
+<div class="container">
+    <div class="row">
+        <div ng-bind-html="menudetails">
+
+        </div>
+    </div>
+
+    <div ng-repeat="Item in items">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-lg-12">
+                <h4>{{Item.Code}} {{Item.Title}}</h4>
+               
+            </div>
+
+            <div class="col-xs-12 col-sm-12 col-lg-12">
+                <div ng-hide="!Item.PrintUrl.Url">
+                    <a href='{{Item.PrintUrl.Url}}' target="_blank">
+                        <span class="Pdf-Icon glyphicon glyphicon-print" aria-hidden="true" aria-label="pdf"></span>
+                    </a>
+                </div>
+
+            </div>
+            <div class="col-xs-12 col-sm-12 col-lg-12">
+                <span ng-bind-html="getHtmlBody($index)">
+                </span>
+
+            </div>
+
+
+            <div class="col-xs-12 col-sm-12 col-lg-12">
+                <div class="padded" ng-hide="!Item.SoundUrl.Url">
+
+                    <button type="button" class="btn btn-xs" aria-label="Play" ng-click='Play(Item)' ng-hide="!Item.SoundUrl.Url || Item.playing" ng-show="!Item.playing">
+                        <span class="glyphicon glyphicon-play" aria-hidden="true"></span>
+                    </button>
+                    <button type="button" class="btn btn-xs" aria-label="Stop" ng-click='Stop(Item)' ng-hide="!Item.SoundUrl.Url || !Item.playing" ng-show="Item.playing">
+                        <span class="glyphicon glyphicon-stop" aria-hidden="true"></span>
+                    </button>
+
+                </div>
+
+               
+
+
+            </div>
+            <div class="col-xs-12 col-sm-12 col-lg-12">
+                
+
+                <button type="button" class="btn btn-xs" aria-label="Checkout" ng-click='Buy(Item, 1)'>
+                    <span class="pull-right" >
+                        <span class="glyphicon glyphicon-shopping-cart" aria-hidden="false">
+                        <span class="Checkout_Button">{{Item.Price}}</span>
+                        </span>
+                    </span>
+                </button>
+
+
+            </div>
+
+            <div class="MenuItems-Border col-xs-12 col-sm-12 col-lg-12">
+
+            </div>
+
+        </div>
+    </div>
+</div>

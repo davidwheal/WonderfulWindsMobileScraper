@@ -1,0 +1,1 @@
+﻿https://raw.githubusercontent.com/sayanee/angularjs-pdf/8ffcd5cfc597aa244e3de6ec5719772bba4916e5/dist/angular-pdf.min.js
